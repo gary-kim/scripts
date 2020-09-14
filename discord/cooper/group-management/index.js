@@ -36,7 +36,7 @@ async function place_engineers(m) {
     const engineers_group = m.guild.roles.cache.find(role => role.name.toLowerCase() === 'engineers');
     // Add engineers group to all engineers
     engineers.forEach(member => {
-        member.roles.add(engineer_groups);
+        member.roles.add(engineers_group);
     });
     m.channel.send("Engineer roles complete");
 }
